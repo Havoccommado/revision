@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .header{
+        width: 800px;
+        margin:0 auto;
+    }
+    .header img{
+        margin: 10px auto;
+    }
+</style>
+<body>
+<div id="warp">
+    <div class="header">
+        <img src="img/show1_big.jpg" alt="">
+    </div>
+    <div class="content">
+        <img src="" alt="">
+    </div>
+</div>
+</body>
+<script>
+    var con = document.querySelector(".content");
+    var imgs = document.createElement("img");
+    var show = document.querySelector(".header img");
+    for (var i = 1;i < 5;i++){
+        con.appendChild(imgs);
+        imgs[i].src = "img/show"+i+".jpg";
+    }
+</script>
+</html>
